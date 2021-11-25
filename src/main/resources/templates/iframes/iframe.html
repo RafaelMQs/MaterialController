@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="produto" th:each="material:${materials}">
+        <p id="material_nome" class="iframe_elem1" th:text="${material.type}" >[tipo]</p>
+        <p id="material_qnt" class="iframe_elem1" th:text="${material.quantity}">[quantidade]</p>
+    </div>
+</body>
+</html>

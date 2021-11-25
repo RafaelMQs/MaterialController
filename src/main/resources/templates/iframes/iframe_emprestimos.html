@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="produto2" th:each="student:${students}">
+        <p id="material_nome" class="iframe_elem2" th:text="${student.type}">[material]</p>
+        <p id="material_qnt" class="iframe_elem2" th:text="${student.quant}">[quantidade]</p>
+        <p id="aluno_nome" class=" iframe_elem2" th:text="${student.name}"> [aluno]⠀⠀</p>
+        <p id="aluno_num" class="iframe_elem2" th:text="${student.number}">[número]</p>
+    </div>
+
+    
+    
+</body>
+</html>

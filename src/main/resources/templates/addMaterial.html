@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=0.67">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Material</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barralateral">
+            <div class="br_titulo">
+                <img src="images/Logo.png" class="logo">
+                <p class="CEAP">CEAP</p>
+            </div>
+            <div class="br_perfil">
+                <img class="User_image_BL" src="images/anonimo.png">
+                <p class="nome_perfil_BL">Bem vindo</p>
+            </div>
+            <div class="br_buttons">
+                <a href="listaMaterialPage"><button class="bt_lateral" >Listar Materiais</button> </a>
+                <a href="addMaterialPage"><button class="bt_lateral" >Adicionar Material</button> </a>
+                <a href="listaEmprestimoPage"><button class="bt_lateral" >Listar Emprestimo</button> </a>
+                <a href="novoEmprestimoPage"><button class="bt_lateral" >Novo Emprestimo</button> </a>
+            </div>
+        </div>
+        
+        <div class="conteudo">   
+            <h3 class="pagina">Home / Adicionar Material</h3>
+            <div class="conteudinho bk">
+                <h3 class="titulo">Adicionar</h3>
+                <div class="formulario_cadastro">
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Material</p>
+                        <input id="material_material" type="text" class="input">
+                    </div>
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Quantidade</p>
+                        <input id="quant_material" type="number" class="input">
+                    </div>
+
+                    <div class="componentesForm">
+                        <button id="cadastrar_usuario" class="bt_fim bt_cadastrar" onclick="cadastrarMaterial()">Adicionar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/materials.js"></script>
+    
+    <!-- 
+
+            <a href="Login.html" class="bt_login">asada</a> -->
+    <!-- <img id="fotoDePerfil" class="User_image">
+    <p class="nome_perfil">[nome]</p> -->
+</body>
+</html>

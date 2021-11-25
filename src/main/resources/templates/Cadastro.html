@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=0.67">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barralateral">
+            <div class="br_titulo">
+                <img src="images/Logo.png" class="logo">
+                <p class="CEAP">CEAP</p>
+            </div>
+            <div class="br_perfil">
+                <img class="User_image_BL" src="images/anonimo.png">
+                <p class="nome_perfil_BL">Bem vindo, Convidado</p>
+            </div>
+            <div class="br_buttons">
+                <button class="bt_lateral">Listar Materiais</button> <br>
+                <button class="bt_lateral">Adicionar Material</button> <br>
+                <button class="bt_lateral">Listar Emprestimo</button> <br>
+                <button class="bt_lateral">Novo Emprestimo</button>
+            </div>
+        </div>
+        
+        <div class="conteudo">   
+            <h3 class="pagina">Home / Cadastro</h3>
+            <div class="conteudinho bk">
+                <h3 class="titulo">Cadastro</h3>
+                <div class="formulario_cadastro">
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Nome</p>
+                        <input id="nome_usuario" type="text" class="input input_1">
+                    </div>
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Email</p>
+                        <input id="email_usuario" type="email" class="input input_2">
+                    </div>
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Senha</p>
+                        <input id="senha_usuario" type="password" class="input input_3">
+                    </div>
+                    <div class="componentesForm">
+                        <button id="cadastrar_usuario" class="bt_fim bt_cadastrar" onclick="cadastrarUser()">Cadastrar</button>
+                        <a href="logarUsuarioPage"> Fazer Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/userCadastro.js"></script>
+    <!-- 
+
+            <a href="Login.html" class="bt_login">asada</a> -->
+    <!-- <img id="fotoDePerfil" class="User_image">
+    <p class="nome_perfil">[nome]</p> -->
+</body>
+</html>

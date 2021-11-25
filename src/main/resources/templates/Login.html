@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=0.67">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barralateral">
+            <div class="br_titulo">
+                <img src="images/Logo.png" class="logo">
+                <p class="CEAP">CEAP</p>
+            </div>
+            <div class="br_perfil">
+                <img class="User_image_BL" src="images/anonimo.png">
+                <p class="nome_perfil_BL">Bem vindo, Convidado</p>
+            </div>
+            <div class="br_buttons">
+                <button class="bt_lateral">Listar Materiais</button> <br>
+                <button class="bt_lateral">Adicionar Material</button> <br>
+                <button class="bt_lateral">Listar Emprestimo</button> <br>
+                <button class="bt_lateral">Novo Emprestimo</button>
+            </div>
+        </div>
+        
+        <div class="conteudo">   
+            <h3 class="pagina">Home / Login</h3>
+            <div class="conteudinho bk">
+                <h3 class="titulo">Login</h3>
+                <div class="formulario_cadastro">
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Nome</p>
+                        <input id="loginNome_usuario" type="text" class="input input_1">
+                    </div>
+                    <div class="componentesForm">
+                        <p class="cadastro_nomes">Senha</p>
+                        <input id="loginSenha_usuario" type="password" class="input input_3">
+                    </div>
+                    <div class="componentesForm">
+                        <button id="cadastrar_usuario" class="bt_fim bt_cadastrar" onclick="logarUser()">Logar</button>
+                        <a href="cadastrarUsuarioPage"> Fazer Cadastro</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="/userCadastro.js"></script>
+    
+    <!-- 
+
+            <a href="Login.html" class="bt_login">asada</a> -->
+    <!-- <img id="fotoDePerfil" class="User_image">
+    <p class="nome_perfil">[nome]</p> -->
+
+</body>
+</html>
